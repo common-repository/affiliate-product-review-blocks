@@ -1,0 +1,19 @@
+.wp-block-mstg-score-bar {
+    .score-bar-container {
+        width: 100%;
+        background: #D0D0D0;
+        border-radius: 50px;
+    }
+    .score-bar-value {
+        border-radius: 50px;
+    }
+    .score-bar-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .score-bar-title p {
+        margin: 0 !important;
+    }
+}

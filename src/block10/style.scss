@@ -1,0 +1,64 @@
+.wp-block-mstg-comparison-table {
+    .table-head {
+        display: flex;
+        justify-content: stretch;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        text-align: center;
+        font-weight: 700;
+    }
+    // common padding + border
+    .table-head-product, .table-head-type, .table-head-price, .table-head-features, .table-head-rating, .table-head-btn {
+        padding: 15px;
+    }
+
+    .table-head-product, .table-head-features, .table-head-btn {
+        width: 20%;
+    }
+    
+    .table-head-type,.table-head-rating {
+        width: 15%;
+    }
+    
+    .table-head-price {
+        width: 10%;
+    }
+    .table-body {
+        .wp-block-mstg-product-row {
+            margin-top: -1px;
+        }
+    }
+}
+
+// Responsive Table
+@media (max-width: 768px) {
+    .wp-block-mstg-comparison-table {
+        .table-head {
+            display: none !important;
+        }
+        .table-body {
+            .wp-block-mstg-product-row {
+                margin-top: 0 !important;
+            }
+        }
+        .wp-block-mstg-product-row {
+            flex-direction: column !important;
+        }
+        .product_info_area, .product_type_area, .product_price_area, .product_features_area, .product_rating, .product_btn_area {
+            width: 100% !important;
+            border-right: 0 !important;
+        }
+        .slick-prev, .slick-next {
+            z-index: 2;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: #000 !important;
+        }
+        .slick-next {
+            right: 5px !important;
+        }
+        .slick-prev {
+            left: 5px !important;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.wp-block-mstg-props-cons{
+    ul {
+        margin: 15px 0;
+        padding: 0;
+        text-align: left;
+        li {
+            list-style: none;
+            display: block;
+            position: relative;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: -20px;
+                width: 15px;
+                height: 15px;
+                line-height: 10px;
+                margin-top: 6px;
+                border-radius: 50%;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+    &.props ul li:before {
+        content: "+";
+        background: #3572A9;
+        font-size: 20px;
+    }
+    &.cons ul li:before {
+        content: "-";
+        background: #fc3a3a;
+        font-size: 25px;
+    }
+}
+    

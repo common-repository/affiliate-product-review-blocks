@@ -1,0 +1,74 @@
+.wp-block-mstg-full-product-review {
+    position: relative;
+    padding: 30px;
+    &.enable-box-shadow {
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    a {
+        text-decoration: none !important;
+    }
+    .product-container {
+        text-align: center;
+    }
+    .product-image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .product-primary-btn {
+        display: block;
+        padding: 10px 20px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 10px;
+        transition: 0.3s;
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+    .product-terms {
+        margin-top: 10px;
+        font-size: .85em;
+    }
+
+    .product-title {
+        margin-top: 20px;
+    }
+
+    .product-description {
+        text-align: left;
+    }
+
+    // props & cons 
+    .props-cons-area {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        ul {
+            margin: 15px 0;
+            padding: 0;
+        }
+        .wp-block-mstg-props-cons {
+            margin: 30px;
+        }
+    }
+}
+
+// Responsive Style 
+@media (max-width: 767px) {
+    .wp-block-afpb-product-showcase {
+        .product-container {
+            flex-direction: column !important;
+        }
+        .product-image {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-top: 50px !important;
+        }
+        .product-content {
+            width: 100% !important;
+            margin-top: 30px !important;
+        }
+    }
+}

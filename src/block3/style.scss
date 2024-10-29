@@ -1,0 +1,79 @@
+.wp-block-mstg-review-box {
+    position: relative;
+    border: 5px solid #335ab9;
+    padding: 30px;
+    &.enable-box-shadow {
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    a {
+        text-decoration: none !important;
+    }
+    .product-badge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -20px;
+        padding: 10px 20px;
+        margin-left: -10px;
+        display: block;
+        .product-badge-triangle {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top-width: 10px;
+            border-top-style: solid;
+            border-left: 10px solid transparent;
+        }
+    }
+    .product-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    
+    .product-image {
+        width: 45%;
+        margin-right: 5%;
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    .product-content {
+        width: 50%;
+    }
+
+    .product-primary-btn {
+        display: block;
+        padding: 10px 20px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 10px;
+        transition: 0.3s;
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+}
+
+// Responsive Style 
+@media (max-width: 767px) {
+    .wp-block-mstg-review-box {
+        .product-container {
+            flex-direction: column !important;
+        }
+        .product-image {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-top: 50px !important;
+        }
+        .product-content {
+            width: 100% !important;
+            margin-top: 30px !important;
+        }
+    }
+}

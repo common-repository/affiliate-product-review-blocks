@@ -1,0 +1,119 @@
+.wp-block-mstg-product-reivew {
+    .product-review-top-area {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+    }
+    
+    .product-image {
+        width: 60%;
+        margin-right: 5%;
+        text-align: center;
+    }
+    
+    .review-top-content {
+        width: 35%;
+    }
+
+    // badge
+    .product-badge {
+        padding: 5px 30px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 3px;
+    }
+    
+    // button
+    a.product-primary-btn {
+        display: block;
+        text-decoration: none !important;
+        text-align: center;
+        padding: 5px 10px;
+    }
+    
+    .price {
+        font-weight: 500;
+        margin: 15px 0;
+        h3 {
+            margin: 0 !important;
+        }
+    }
+
+    // review content 
+    .products-review-content {
+        overflow: hidden;
+        .wp-block-mstg-props-cons {
+            float: left;
+            width: 44%;
+            margin: 0 3%;
+        }
+    }
+
+
+    // product score 
+    .wp-block-mstg-product-score {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        margin-bottom: 15px;
+    }
+    
+    .overall-score-container {
+        margin-right: 30px;
+    }
+    
+    .score-bars-container {
+        width: 100%;
+    }
+    
+    .score-value {
+        text-align: center;
+        line-height: 90px;
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .score-label {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    // props 
+    .wp-block-mstg-props-cons.props ul li:before {
+        background: #51AE58;
+    }
+
+    .wp-block-mstg-props-cons.cons ul li:before {
+        background: #F9BE1C;
+    }
+}
+
+// Responsive mobile view
+
+// Responsive Style 
+@media (max-width: 767px) {
+    .wp-block-mstg-product-reivew {
+        .product-review-top-area {
+            flex-direction: column;
+        }
+        .product-image {
+            margin-right: 0 !important;
+            margin-bottom: 30px;
+        }
+        .product-image, .review-top-content {
+            width: 100% !important;
+        }
+        // review content 
+        .products-review-content {
+            .wp-block-mstg-props-cons {
+                float: none !important;
+                width: 100% !important;
+                margin: 0 20px !important;
+            }
+        }
+    }
+}
